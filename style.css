@@ -1,0 +1,139 @@
+body{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+}
+#main{
+    width: 350px;
+    height: 250px;
+    padding: 15px;
+    background-color: #B05A7A;
+    border-radius: 20px;
+}
+#main:hover{
+    box-shadow: 0px 1px 5px 6px rgba(176,90,122,0.69);
+-webkit-box-shadow: 0px 1px 5px 6px rgba(176,90,122,0.69);
+-moz-box-shadow: 0px 1px 5px 6px rgba(176,90,122,0.69);
+transition: 0.4s all;
+}
+
+.displayConiainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#display{
+    width: 70%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#clear{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #84D2C5;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.but{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E4C988;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+.but:hover{
+    background-color: white;
+    color: #E4C988;
+    transform: scale(1.1);
+    transition: 0.4s all;
+}
+#answer{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E4C988;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+#answer:hover{
+    background-color: white;
+    color: #E4C988;
+    transform: scale(1.1);
+    transition: 0.4s all;
+}
+
+/* -----------------   for Mobile Screen   ------------------------- */
+
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #main{
+        width: 270px;
+    }
+    .but{
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: #E4C988;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+    }
+    .but:hover{
+        background-color: white;
+        color: #E4C988;
+        transform: scale(1.1);
+        transition: 0.4s all;
+    }
+    #answer{
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: #E4C988;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    #answer:hover{
+        background-color: white;
+        color: #E4C988;
+        transform: scale(1.1);
+        transition: 0.4s all;
+    }
+
+}
